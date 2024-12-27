@@ -1,0 +1,27 @@
+
+[
+    {
+      "key": 1,
+      "title": " IoT-Based Smart Dustbin | Technologies used :- ESP32, Ultrasonic Sensor, Servo Motor",
+      "imageSrc": "https://cdn.pixabay.com/photo/2018/02/04/17/39/crypto-currency-3130381_640.jpg",
+      "description": "Designed a smart dustbin using Arduino Uno, ultrasonic sensor, and servo motor, Automated lid opening when motion is detected, ensuring hands-free operation. Implemented efficient waste-level detection and real-time monitoring. This project is a modern solution for a modern problem, and it will be useful for various applications.",
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "key": 2,
+      "title": "Weather Web Application | Technologies used : HTML, CSS, JavaScript, API",
+      "imageSrc": "https://cdn.pixabay.com/photo/2017/05/02/15/30/streets-2278471_640.jpg",
+      "description": "Developed an weather application that fetches real-time weather data using API, providing users with up-to-date forecasts Implemented dynamic search functionality to allow users to easily retrieve weather information for any city. Enhanced user experience with smooth transitions and a clean interface, making data presentation engaging",
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "key": 2,
+      "title": "Weather Web Application | Technologies used : HTML, CSS, JavaScript, API",
+      "imageSrc": "https://cdn.pixabay.com/photo/2017/05/02/15/30/streets-2278471_640.jpg",
+      "description": "Developed an weather application that fetches real-time weather data using API, providing users with up-to-date forecasts Implemented dynamic search functionality to allow users to easily retrieve weather information for any city. Enhanced user experience with smooth transitions and a clean interface, making data presentation engaging",
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    }
+  ]

@@ -1,0 +1,285 @@
+:root {
+  --box-shadow: 5px 5px 10px 8px rgba(101, 175, 10, 0.5);
+  --bg-color: rgb(40, 47, 97);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: rgb(11, 26, 51);
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* General Reset and Layout */
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+/* Navbar Section */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* .nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+} */
+
+.nav_bar {
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 1000; Ensures it stays on top of other elements */
+  /* background-color: rgb(40, 47, 97); Optional: Define a background color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+
+
+.nav_bar .nav_items {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav_bar .nav_items:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  transition: background-color 0.3s ease;
+  border-bottom: 2px solid yellow;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .left {
+  width: 60%;
+  display: inline-block;
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+  border: 3px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+
+.home .left h1 {
+  width: 100%; /* Ensure it spans the container width */
+  max-width: 600px; /* Adjust this based on your design */
+  min-height: 50px; /* Adjust to fit the tallest text */
+  margin: 0 auto; /* Center align if needed */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Prevent overflow */
+  text-align: center;
+  font-size: 2rem; /* Adjust font size */
+  font-weight: bold; /* Optional: Enhance appearance */
+}
+
+
+
+.home .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .right .img img {
+  height: 270px;
+  width: 270px;
+  border: 5px solid yellow;
+  border-radius: 100%;
+  animation-name: superman;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes superman {
+  0% {
+    border-color: blue;
+    transform: translate(0, 0px);
+    box-shadow: 10px 10px 100px 50px blue;
+  }
+  25% {
+    border-color: rgb(239, 244, 11);
+    box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+  }
+  50% {
+    border-color: rgb(12, 12, 199);
+    transform: translate(0, 10px);
+    box-shadow: 10px 10px 100px 50px rgb(12, 12, 199);
+  }
+  75% {
+    border-color: rgb(130, 217, 160);
+    box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+  }
+  100% {
+    border-color: rgb(50, 55, 205);
+    transform: translate(0, -0px);
+    box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+  }
+}
+
+/* Experience Section */
+.ex {
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+.ex-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+
+.logo-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* Projects Section */
+.projects {
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+.card {
+  background-color: var(--bg-color);
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card-img-top {
+  width: auto;
+  height: auto;
+  border: 2px solid yellow;
+  border-radius: 10px;
+}
+
+.card-body {
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.btn {
+  margin: 0 5px;
+}
+
+/* Skills Section */
+.skills {
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+.skills .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills .items .item {
+  width: calc(33.33% - 20px);
+  background-color: black;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+
+.skills .items .item img {
+  width: 70px;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-icon .items {
+  background-color: black;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid yellow;
+}
+
+.contact-icon .items:hover {
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-icon .items .icons {
+  font-size: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projects, .ex, .skills, .contact {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .skills .items .item {
+    width: calc(50% - 20px);
+  }
+}

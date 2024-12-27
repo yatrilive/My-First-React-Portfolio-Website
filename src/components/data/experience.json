@@ -1,0 +1,18 @@
+
+[
+    {
+      "id": 1,
+      "role": "Production Officer",
+      "organisation": "Zee Laboratories Pvt. Ltd.",
+      "startDate": "June, 2022",
+      "endDate": "July, 2023",
+      "location": "Paonta Sahib, Himachal Pradesh",
+      "experiences": [
+        "Contributed to the manufacturing of injectable medications ensuring consistent quality and smooth production operations",
+        "Collaborated with cross-functional teams to optimize production efficiency and maintained accurate documentation production activities, and compliance GMP"
+      ],
+
+      "imageSrc": "compny/logo.png"
+    }
+    
+  ]
