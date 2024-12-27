@@ -283,3 +283,87 @@ a {
     width: calc(50% - 20px);
   }
 }
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .contact-icon {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-icon .items {
+    height: 50px;
+    width: 50px;
+  }
+
+  .contact-icon .items .icons {
+    font-size: 1.5rem;
+  }
+
+  /* Additional Section Responsiveness */
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projects, .ex, .skills, .contact {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .skills .items .item {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .contact {
+    padding: 5px;
+  }
+
+  .contact-icon .items {
+    height: 45px;
+    width: 45px;
+  }
+
+  .contact-icon .items .icons {
+    font-size: 1.2rem;
+  }
+
+  /* Additional Section Responsiveness */
+  .home .left {
+    width: 100%;
+  }
+
+  .home .right {
+    width: 100%;
+  }
+
+  .home h1 {
+    font-size: 1.8rem;
+  }
+
+  .projects, .ex, .skills {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .projects .item {
+    width: 100%;
+  }
+
+  .skills .items .item {
+    width: 100%;
+  }
+}
+
