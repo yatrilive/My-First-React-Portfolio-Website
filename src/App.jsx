@@ -1,30 +1,36 @@
-import React, { useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Experienc from './components/Experience';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
+import React, { useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Experienc from "./components/Experience";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/footer";
+
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 
 const App = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+    });
+  }, []);
 
-useEffect(() => {
-  Aos.init();
-}, []);
-
- return (
-  <>
-    <Navbar />
-    <Home />
-    <Experienc />
-    <Projects />
-    <Skills />
-    <Contact />
-  </>
- );
+  return (
+    <>
+      <Navbar />
+      <Home />
+      <Experienc />
+      <Projects />
+      <Skills />
+      <Contact/>
+      <Footer />
+    </>
+  );
 };
 
-export default App
+export default App;
